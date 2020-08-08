@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./dist/bundle.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "tsnd --transpile-only --ignore-watch node-modules --respawn src/index.ts",
     "build": "webpack"
   },
   "author": "davidalves1 <alves.david@outlook.com> (https://davidalves1.com)",
@@ -13,8 +13,8 @@
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.3",
     "ts-loader": "^7.0.1",
+    "ts-node-dev": "^1.0.0-pre.56",
     "typescript": "^3.8.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
